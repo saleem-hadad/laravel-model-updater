@@ -1,0 +1,54 @@
+{
+    "name": "binarytorch/laravel-updatable",
+    "description": "Laravel Updatable",
+    "keywords": [
+        "binarytorch",
+        "laravel-updatable"
+    ],
+    "homepage": "https://github.com/binarytorch/laravel-updatable",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Saleem Hadad",
+            "email": "saleem@binarytorch.com.my",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BinaryTorch\\LaravelUpdatable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BinaryTorch\\LaravelUpdatable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BinaryTorch\\LaravelUpdatable\\LaravelUpdatableServiceProvider"
+            ],
+            "aliases": {
+                "LaravelUpdatable": "BinaryTorch\\LaravelUpdatable\\LaravelUpdatableFacade"
+            }
+        }
+    }
+}
