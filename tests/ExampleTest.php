@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryTorch\LaravelUpdatable\Tests;
+namespace BinaryTorch\Updatable\Tests;
 
 use PHPUnit\Framework\TestCase;
 

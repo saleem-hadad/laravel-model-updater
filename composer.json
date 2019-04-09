@@ -1,9 +1,10 @@
 {
     "name": "binarytorch/laravel-updatable",
-    "description": "Laravel Updatable",
+    "description": "Laravel Updatable Model",
     "keywords": [
         "binarytorch",
-        "laravel-updatable"
+        "laravel-updatable",
+        "laravel"
     ],
     "homepage": "https://github.com/binarytorch/laravel-updatable",
     "license": "MIT",
@@ -17,7 +18,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/support": "5.8.*"
+        "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*"
     },
     "require-dev": {
         "orchestra/testbench": "3.8.*",
@@ -25,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BinaryTorch\\LaravelUpdatable\\": "src"
+            "BinaryTorch\\Updatable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BinaryTorch\\LaravelUpdatable\\Tests\\": "tests"
+            "BinaryTorch\\Updatable\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,11 +45,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BinaryTorch\\LaravelUpdatable\\LaravelUpdatableServiceProvider"
-            ],
-            "aliases": {
-                "LaravelUpdatable": "BinaryTorch\\LaravelUpdatable\\LaravelUpdatableFacade"
-            }
+                "BinaryTorch\\Updatable\\UpdatableServiceProvider"
+            ]
         }
     }
 }
