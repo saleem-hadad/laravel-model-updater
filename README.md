@@ -77,9 +77,9 @@ class UserUpdatableModel extends UpdatableModel
 //App/Http/Controllers
 class UserController extends Controller
 {
-    public function update(UserUpdatableModel $resource)
+    public function update(UserUpdatableModel $updates)
     {
-        auth()->user()->fillUpdate($resource);
+        auth()->user()->fillUpdate($updates);
 
         return response()->json([]);
     }

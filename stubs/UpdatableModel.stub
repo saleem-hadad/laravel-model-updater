@@ -7,7 +7,7 @@ use BinaryTorch\UpdatableModel\UpdatableModel;
 class {{CLASSNAME}} extends UpdatableModel
 {
     /**
-     * Registered fields that allowed to be modified.
+     * Allowed fields to be modified.
      *
      * @var array
      */
