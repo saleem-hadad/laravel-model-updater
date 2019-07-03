@@ -1,5 +1,7 @@
 # Laravel Updatable Model
 
+> TOC
+
 - [Overview](#overview)
 - [Why](#why)
 - [Installation](#installation)
@@ -9,6 +11,11 @@
 - [Credits](#credits)
 - [License](#license)
 
+
+## Overview
+
+## Why
+
 ## Installation
 
 You can install the package via composer:
@@ -16,6 +23,8 @@ You can install the package via composer:
 ```bash
 composer require binarytorch/updatable-model
 ```
+
+## Usage
 
 ## Contributing
 
