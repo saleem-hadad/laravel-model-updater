@@ -1,10 +1,10 @@
 <?php
 
-namespace BinaryTorch\Updatable;
+namespace BinaryTorch\UpdatableModel;
 
 use Illuminate\Support\ServiceProvider;
 
-class UpdatableServiceProvider extends ServiceProvider
+class UpdatableModelServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

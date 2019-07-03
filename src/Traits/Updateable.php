@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryTorch\UpdatableResource\Traits;
+namespace BinaryTorch\UpdatableModel\Traits;
 
-use BinaryTorch\Updatable\UpdateableModel;
+use BinaryTorch\UpdatableModel\UpdateableModel;
 
 trait Updateable
 {
@@ -12,6 +12,6 @@ trait Updateable
      */
     public function fillUpdate(UpdateableModel $updateableModel)
     {
-        return $updateableModel->process($this);
+        return $updateableModel->process(self);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryTorch\Updatable;
+namespace BinaryTorch\UpdatableModel;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
@@ -61,5 +61,13 @@ abstract class UpdateableModel
     public function getIntendedUpdateFields()
     {
         return $this->request->only($this->fields);
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function update($any)
+    {
+        return $this->model->update($any);
     }
 }

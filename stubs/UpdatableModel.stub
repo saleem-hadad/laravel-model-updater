@@ -1,0 +1,25 @@
+<?php
+
+namespace App\UpdatableModels;
+
+use Illuminate\Support\Facades\Storage;
+use BinaryTorch\UpdatableModel\UpdatableModel;
+
+class {{CLASSNAME}} extends UpdatableModel
+{
+    /**
+     * Registered fields that allowed to be modified.
+     *
+     * @var array
+     */
+    protected $fields = ['someProperty'];
+
+    /**
+     * @param $value
+     * @return mixed
+     */
+    protected function someProperty($value)
+    {
+        // return $this->update(['someProperty' => $value]);
+    }
+}
