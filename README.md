@@ -1,7 +1,7 @@
 # Laravel Updatable Model
 
 - [Overview](#overview)
-- [Installation](#installation)
+- [Installation & Usage](#installation-&-usage)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [Security](#security)
@@ -86,15 +86,53 @@ class UserController extends Controller
 }
 ```
 
-## Installation
+## Installation & Usage
 
-You can install the package via composer:
+1. Install the package via composer:
+
+> This package supports Laravel 5.5+ only.
 
 ```bash
 composer require binarytorch/updatable-model
 ```
 
-## Usage
+2. Add `Updatable` trait to your desired model:
+
+```php
+class User extends Authenticatable
+{
+    use BinaryTorch\UpdatableModel\Traits\Updateable;
+}
+```
+
+3. Make a new updatable model:
+
+```bash
+php artisan make:updatable User
+```
+
+This command will create a new directory under `app` dir named `UpdatableModels` and a file inside it called (in this example) `UserUpdatableModel.php`.
+
+4. Make use in your controllers:
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use App\UpdatableModels\UserUpdatableModel;
+
+class UserController extends Controller
+{
+    public function update(UserUpdatableModel $updates)
+    {
+        auth()->user()->fillUpdate($updates);
+
+        // return a response/redirect
+    }
+}
+```
 
 ## Contributing
 
