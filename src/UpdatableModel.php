@@ -5,7 +5,7 @@ namespace BinaryTorch\UpdatableModel;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 
-abstract class UpdateableModel
+abstract class UpdatableModel
 {
     /**
      * @var Request

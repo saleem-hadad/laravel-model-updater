@@ -1,16 +1,11 @@
-# Very short description of the package
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/binarytorch/laravel-updatable.svg?style=flat-square)](https://packagist.org/packages/binarytorch/laravel-updatable)
-[![Build Status](https://img.shields.io/travis/binarytorch/laravel-updatable/master.svg?style=flat-square)](https://travis-ci.org/binarytorch/laravel-updatable)
-[![Quality Score](https://img.shields.io/scrutinizer/g/binarytorch/laravel-updatable.svg?style=flat-square)](https://scrutinizer-ci.com/g/binarytorch/laravel-updatable)
-[![Total Downloads](https://img.shields.io/packagist/dt/binarytorch/laravel-updatable.svg?style=flat-square)](https://packagist.org/packages/binarytorch/laravel-updatable)
+# Laravel Updatable Model
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require binarytorch/laravel-updatable
+composer require binarytorch/updatable-model
 ```
 
 ## Contributing

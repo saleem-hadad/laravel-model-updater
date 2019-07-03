@@ -3,6 +3,7 @@
 namespace BinaryTorch\UpdatableModel;
 
 use Illuminate\Support\ServiceProvider;
+use BinaryTorch\UpdatableModel\Commands\MakeUpdatableModel;
 
 class UpdatableModelServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,8 @@ class UpdatableModelServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        if ($this->app->runningInConsole()) {
+            $this->commands(MakeUpdatableModel::class);
+        }
     }
 }
