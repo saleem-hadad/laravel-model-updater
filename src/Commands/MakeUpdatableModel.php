@@ -46,8 +46,6 @@ class MakeUpdatableModel extends Command
      */
     public function handle()
     {
-        $this->info('Generating a new updatable resource...');
-
         $className = $this->argument('model') . 'UpdatableModel';
         $updatableDir = app_path('UpdatableModels');
         $updatablePath = app_path('UpdatableModels/') . $className . '.php';
@@ -61,7 +59,7 @@ class MakeUpdatableModel extends Command
 
             $this->filesystem->put($updatablePath, $content);
 
-            $this->info('Done.');
+            $this->info('Updatable model generated');
         }else {
             $this->error('File Already Exists!');
         }

@@ -2,7 +2,6 @@
 
 namespace App\UpdatableModel;
 
-use Illuminate\Support\Facades\Storage;
 use BinaryTorch\UpdatableModel\UpdatableModel;
 
 class {{CLASSNAME}} extends UpdatableModel
