@@ -12,6 +12,6 @@ trait Updatable
      */
     public function fillUpdate(UpdatableModel $updatableModel)
     {
-        return $updatableModel->process(self);
+        return $updatableModel->process($this);
     }
 }
