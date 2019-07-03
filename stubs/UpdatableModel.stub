@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UpdatableModel;
+namespace App\UpdatableModels;
 
 use BinaryTorch\UpdatableModel\UpdatableModel;
 
