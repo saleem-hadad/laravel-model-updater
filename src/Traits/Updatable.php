@@ -10,7 +10,7 @@ trait Updatable
      * @param  UpdatableModel $updatableModel
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function fillUpdate(UpdatableModel $updatableModel)
+    public function fillUpdates(UpdatableModel $updatableModel)
     {
         return $updatableModel->process($this);
     }

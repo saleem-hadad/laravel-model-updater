@@ -62,12 +62,4 @@ abstract class UpdatableModel
     {
         return $this->request->only($this->fields);
     }
-
-    /**
-     * @return mixed
-     */
-    protected function update($any)
-    {
-        return $this->model->update($any);
-    }
 }

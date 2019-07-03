@@ -64,7 +64,7 @@ class UserController extends Controller
 {
     public function update(UserUpdatableModel $updates)
     {
-        auth()->user()->fillUpdate($updates);
+        auth()->user()->fillUpdates($updates);
 
         return response()->json([]);
     }
@@ -128,7 +128,7 @@ class UserController extends Controller
 {
     public function update(UserUpdatableModel $updates)
     {
-        auth()->user()->fillUpdate($updates);
+        auth()->user()->fillUpdates($updates);
 
         // return a response/redirect
     }

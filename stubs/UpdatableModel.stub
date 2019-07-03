@@ -19,6 +19,7 @@ class {{CLASSNAME}} extends UpdatableModel
      */
     protected function someProperty($value)
     {
-        // return $this->update(['someProperty' => $value]);
+        // $this->request->validate(['someProperty' => 'required']);
+        // $this->model->someProperty = $value;
     }
 }
