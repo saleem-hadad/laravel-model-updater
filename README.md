@@ -1,6 +1,6 @@
-# Laravel Updatable Model
-
 ![image](https://pbs.twimg.com/media/D-k9Gg1WsAINxkt.jpg:large)
+
+# Laravel Updatable Model
 
 - [Overview](#overview)
 - [Installation & Usage](#installation--usage)
