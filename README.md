@@ -1,5 +1,14 @@
 # Laravel Updatable Model
 
+- [Overview](#overview)
+- [Why](#why)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Security](#security)
+- [Credits](#credits)
+- [License](#license)
+
 ## Installation
 
 You can install the package via composer:
