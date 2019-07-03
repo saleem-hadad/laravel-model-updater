@@ -1,8 +1,7 @@
 # Laravel Updatable Model
 
 - [Overview](#overview)
-- [Installation & Usage](#installation-&-usage)
-- [Usage](#usage)
+- [Installation & Usage](#installation--usage)
 - [Contributing](#contributing)
 - [Security](#security)
 - [Credits](#credits)
@@ -58,6 +57,17 @@ class UserController extends Controller
 > New Way (Simpler)
 
 ```php
+//App/Http/Controllers
+class UserController extends Controller
+{
+    public function update(UserUpdatableModel $updates)
+    {
+        auth()->user()->fillUpdate($updates);
+
+        return response()->json([]);
+    }
+}
+
 // App/UpdatableModels
 class UserUpdatableModel extends UpdatableModel
 {
@@ -71,17 +81,6 @@ class UserUpdatableModel extends UpdatableModel
         $this->request->validate(['name' => 'required|string|min:6']);
 
         return $this->update(['name' => $value]);
-    }
-}
-
-//App/Http/Controllers
-class UserController extends Controller
-{
-    public function update(UserUpdatableModel $updates)
-    {
-        auth()->user()->fillUpdate($updates);
-
-        return response()->json([]);
     }
 }
 ```
@@ -144,7 +143,7 @@ If you discover any security related issues, please email saleem@binarytorch.com
 
 ## Credits
 
-- [Saleem Hadad](https://github.com/binarytorch)
+- [Saleem Hadad](https://github.com/saleem-hadad)
 - [All Contributors](../../contributors)
 
 ## License
