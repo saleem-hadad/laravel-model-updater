@@ -12,7 +12,7 @@
 
 ## Overview
 
-UpdatableModel is a package helps you defining the business logic and the validation needed to update an entire model's fields or just a few of them via a simple controller action and request handler.
+UpdatableModel is a package helps you define the business logic and the validation needed to update an entire model's fields or just a few of them via a simple controller action and request handler.
 
 Let's take a simple example to illustrate the purpose of this package:
 
