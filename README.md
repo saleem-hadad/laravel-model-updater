@@ -1,4 +1,4 @@
-![image](https://pbs.twimg.com/media/D-k9Gg1WsAINxkt.jpg:large)
+![image](https://pbs.twimg.com/media/D-m5M6OW4AAA0tb.jpg:large)
 
 # Laravel Updatable Model
 
