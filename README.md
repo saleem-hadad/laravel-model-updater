@@ -23,7 +23,7 @@ Of course, there are a lot of different ways to handle this case, let's consider
 
 > Old Way
 
-As you can see the controller's method with two fields only becomes a huge one.
+As you can see the controller's method with two fields only becomes a big one, just imagine if you have 20+ fields!
 
 ```php
 class UserController extends Controller
