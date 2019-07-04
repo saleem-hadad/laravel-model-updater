@@ -1,12 +1,12 @@
 {
-    "name": "binarytorch/updatable-model",
-    "description": "Laravel Updatable Model",
+    "name": "binarytorch/model-updater",
+    "description": "Laravel Model Updater",
     "keywords": [
         "binarytorch",
-        "laravel-updatable-model",
+        "laravel-model-updater",
         "laravel"
     ],
-    "homepage": "https://github.com/binarytorch/laravel-updatable-model",
+    "homepage": "https://github.com/binarytorch/laravel-model-updater",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BinaryTorch\\UpdatableModel\\": "src"
+            "BinaryTorch\\ModelUpdater\\": "src"
         }
     },
     "config": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BinaryTorch\\UpdatableModel\\UpdatableModelServiceProvider"
+                "BinaryTorch\\ModelUpdater\\ModelUpdaterServiceProvider"
             ]
         }
     }

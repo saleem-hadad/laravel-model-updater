@@ -1,6 +1,6 @@
 ![image](https://pbs.twimg.com/media/D-m5M6OW4AAA0tb.jpg:large)
 
-# Laravel Updatable Model
+# Laravel Model Updater
 
 - [Overview](#overview)
 - [Installation & Usage](#installation--usage)
@@ -12,7 +12,7 @@
 
 ## Overview
 
-UpdatableModel is a package helps you define the business logic and the validation needed to update an entire model's fields or just a few of them via a simple controller action and request handler.
+ModelUpdater is a package helps you define the business logic and the validation needed to update an entire model's fields or just a few of them via a simple controller action and request handler.
 
 Let's take a simple example to illustrate the purpose of this package:
 
@@ -94,7 +94,7 @@ class UserUpdater extends Updater
 > This package supports Laravel 5.5+ only.
 
 ```bash
-composer require binarytorch/updatable-model
+composer require binarytorch/model-updater
 ```
 
 2. Add `Updatable` trait to your desired model:
@@ -106,7 +106,7 @@ class User extends Authenticatable
 }
 ```
 
-3. Make a new updatable model:
+3. Make a new model updater:
 
 ```bash
 php artisan make:updater User

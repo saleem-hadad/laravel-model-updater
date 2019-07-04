@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryTorch\UpdatableModel;
+namespace BinaryTorch\ModelUpdater;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;

@@ -2,7 +2,7 @@
 
 namespace App\Updaters;
 
-use BinaryTorch\UpdatableModel\Updater;
+use BinaryTorch\ModelUpdater\Updater;
 
 class {{CLASSNAME}} extends Updater
 {

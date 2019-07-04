@@ -1,11 +1,11 @@
 <?php
 
-namespace BinaryTorch\UpdatableModel;
+namespace BinaryTorch\ModelUpdater;
 
 use Illuminate\Support\ServiceProvider;
-use BinaryTorch\UpdatableModel\Commands\MakeModelUpdater;
+use BinaryTorch\ModelUpdater\Commands\MakeModelUpdater;
 
-class UpdatableModelServiceProvider extends ServiceProvider
+class ModelUpdaterServiceProvider extends ServiceProvider
 {
     /**
      * Register the application services.

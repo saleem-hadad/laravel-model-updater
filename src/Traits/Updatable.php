@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryTorch\UpdatableModel\Traits;
+namespace BinaryTorch\ModelUpdater\Traits;
 
-use BinaryTorch\UpdatableModel\Updater;
+use BinaryTorch\ModelUpdater\Updater;
 
 trait Updatable
 {

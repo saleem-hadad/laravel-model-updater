@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryTorch\UpdatableModel\Commands;
+namespace BinaryTorch\ModelUpdater\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -59,7 +59,7 @@ class MakeModelUpdater extends Command
 
             $this->filesystem->put($updaterPath, $content);
 
-            $this->info('Updatable model generated');
+            $this->info('Model updater generated');
         }else {
             $this->error('File Already Exists!');
         }
@@ -83,6 +83,6 @@ class MakeModelUpdater extends Command
      */
     protected function getStubContent()
     {
-        return $this->filesystem->get(base_path('/vendor/binarytorch/updatable-model/stubs/ModelUpdater.stub'));
+        return $this->filesystem->get(base_path('/vendor/binarytorch/model-updater/stubs/ModelUpdater.stub'));
     }
 }
