@@ -46,8 +46,8 @@ class MakeModelUpdater extends Command
      */
     public function handle()
     {
-        $modelName = $this->argument('model');
-        $updatersDir = app_path('Updaters') . 'Updater';
+        $modelName = $this->argument('model') . 'Updater';
+        $updatersDir = app_path('Updaters');
         $updaterPath = app_path('Updaters/') . $modelName . '.php';
         
         if (! $this->filesystem->isDirectory($updatersDir)) {
