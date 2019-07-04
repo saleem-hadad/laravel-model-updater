@@ -60,21 +60,21 @@ class UserController extends Controller
 
 ```php
 //App/Http/Controllers
+use App\UpdatableModels\User as UserUpdatable;
+
 class UserController extends Controller
 {
-    public function update(UserUpdatableModel $updates)
+    public function store(UserUpdatable $updates)
     {
         auth()->user()->fillUpdates($updates);
-
-        return response()->json([]);
     }
 }
 
 // App/UpdatableModels
-class UserUpdatableModel extends UpdatableModel
+class User extends UpdatableModel
 {
     /**
-     * Registered fields that allowed to be modified on the user model.
+     * Allowed fields to be updated.
      */
     protected $fields = ['name'];
 
@@ -112,25 +112,18 @@ class User extends Authenticatable
 php artisan make:updatable User
 ```
 
-This command will create a new directory under `app` dir named `UpdatableModels` and a file inside it called (in this example) `UserUpdatableModel.php`.
+This command will generate a new directory under `app` with namespace of `UpdatableModels` and a file inside it called (in this example) `User.php`.
 
 4. Make use in your controllers:
 
 ```php
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
-use App\UpdatableModels\UserUpdatableModel;
+use App\UpdatableModels\User as UserUpdatable;
 
 class UserController extends Controller
 {
-    public function update(UserUpdatableModel $updates)
+    public function store(UserUpdatable $updates)
     {
         auth()->user()->fillUpdates($updates);
-
-        // return a response/redirect
     }
 }
 ```
