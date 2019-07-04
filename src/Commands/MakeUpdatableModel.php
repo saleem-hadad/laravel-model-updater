@@ -46,16 +46,16 @@ class MakeUpdatableModel extends Command
      */
     public function handle()
     {
-        $className = $this->argument('model') . 'UpdatableModel';
+        $modelName = $this->argument('model');
         $updatableDir = app_path('UpdatableModels');
-        $updatablePath = app_path('UpdatableModels/') . $className . '.php';
+        $updatablePath = app_path('UpdatableModels/') . $modelName . '.php';
         
         if (! $this->filesystem->isDirectory($updatableDir)) {
             $this->filesystem->makeDirectory($updatableDir, 0755, true);
         }
 
         if (! $this->filesystem->exists($updatablePath)) {
-            $content = $this->getClassContentFromStub($className);
+            $content = $this->getClassContentFromStub($modelName);
 
             $this->filesystem->put($updatablePath, $content);
 
