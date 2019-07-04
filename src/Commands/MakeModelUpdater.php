@@ -5,21 +5,21 @@ namespace BinaryTorch\UpdatableModel\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-class MakeUpdatableModel extends Command
+class MakeModelUpdater extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:updatable {model}';
+    protected $signature = 'make:updater {model}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new updatable model.';
+    protected $description = 'Create a new model updater.';
 
     /**
      * @var Filesystem
@@ -47,17 +47,17 @@ class MakeUpdatableModel extends Command
     public function handle()
     {
         $modelName = $this->argument('model');
-        $updatableDir = app_path('UpdatableModels');
-        $updatablePath = app_path('UpdatableModels/') . $modelName . '.php';
+        $updatersDir = app_path('Updaters') . 'Updater';
+        $updaterPath = app_path('Updaters/') . $modelName . '.php';
         
-        if (! $this->filesystem->isDirectory($updatableDir)) {
-            $this->filesystem->makeDirectory($updatableDir, 0755, true);
+        if (! $this->filesystem->isDirectory($updatersDir)) {
+            $this->filesystem->makeDirectory($updatersDir, 0755, true);
         }
 
-        if (! $this->filesystem->exists($updatablePath)) {
+        if (! $this->filesystem->exists($updaterPath)) {
             $content = $this->getClassContentFromStub($modelName);
 
-            $this->filesystem->put($updatablePath, $content);
+            $this->filesystem->put($updaterPath, $content);
 
             $this->info('Updatable model generated');
         }else {
@@ -83,6 +83,6 @@ class MakeUpdatableModel extends Command
      */
     protected function getStubContent()
     {
-        return $this->filesystem->get(base_path('/vendor/binarytorch/updatable-model/stubs/UpdatableModel.stub'));
+        return $this->filesystem->get(base_path('/vendor/binarytorch/updatable-model/stubs/ModelUpdater.stub'));
     }
 }

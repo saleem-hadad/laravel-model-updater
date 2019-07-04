@@ -1,10 +1,10 @@
 <?php
 
-namespace App\UpdatableModels;
+namespace App\Updaters;
 
-use BinaryTorch\UpdatableModel\UpdatableModel;
+use BinaryTorch\UpdatableModel\Updater;
 
-class {{CLASSNAME}} extends UpdatableModel
+class {{CLASSNAME}} extends Updater
 {
     /**
      * Allowed fields to be modified.

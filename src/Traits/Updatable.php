@@ -2,16 +2,16 @@
 
 namespace BinaryTorch\UpdatableModel\Traits;
 
-use BinaryTorch\UpdatableModel\UpdatableModel;
+use BinaryTorch\UpdatableModel\Updater;
 
 trait Updatable
 {
     /**
-     * @param  UpdatableModel $updatableModel
+     * @param  Updater $updater
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function fillUpdates(UpdatableModel $updatableModel)
+    public function fillUpdates(Updater $updater)
     {
-        return $updatableModel->process($this);
+        return $updater->process($this);
     }
 }

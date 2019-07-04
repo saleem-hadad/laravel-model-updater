@@ -60,18 +60,18 @@ class UserController extends Controller
 
 ```php
 //App/Http/Controllers
-use App\UpdatableModels\User as UserUpdatable;
+use App\Updaters\UserUpdater;
 
 class UserController extends Controller
 {
-    public function store(UserUpdatable $updates)
+    public function store(UserUpdater $updates)
     {
         auth()->user()->fillUpdates($updates);
     }
 }
 
-// App/UpdatableModels
-class User extends UpdatableModel
+// App/Updaters
+class UserUpdater extends Updater
 {
     /**
      * Allowed fields to be updated.
@@ -109,19 +109,19 @@ class User extends Authenticatable
 3. Make a new updatable model:
 
 ```bash
-php artisan make:updatable User
+php artisan make:updater User
 ```
 
-This command will generate a new directory under `app` with namespace of `UpdatableModels` and a file inside it called (in this example) `User.php`.
+This command will generate a new directory under `app` with namespace of `Updaters` and a file inside it called (in this example) `UserUpdater.php`.
 
 4. Make use in your controllers:
 
 ```php
-use App\UpdatableModels\User as UserUpdatable;
+use App\Updaters\UserUpdater;
 
 class UserController extends Controller
 {
-    public function store(UserUpdatable $updates)
+    public function store(UserUpdater $updates)
     {
         auth()->user()->fillUpdates($updates);
     }
