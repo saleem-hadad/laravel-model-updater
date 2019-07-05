@@ -16,7 +16,7 @@ ModelUpdater is a package helps you define the business logic and the validation
 
 Let's take a simple example to illustrate the purpose of this package:
 
-Suppose you have a user model and you have an API endpoint to update a model's fields in the database and **the API consumer can update any field individually or all at once and the problem that each field has its own logic needed before you store the updated value to the database.**
+Suppose you have a user model and you have an API endpoint to update a user's fields in the database where as **the API consumer can update any field individually or all at once and the problem is that each field has its own logic needed before you store the updated value to the database.**
 
 
 Of course, there are a lot of different ways to handle this case, let's consider this simple  and common one:
