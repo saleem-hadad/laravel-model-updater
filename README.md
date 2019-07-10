@@ -82,7 +82,7 @@ class UserUpdater extends Updater
     {
         $this->request->validate(['name' => 'required|string|min:6']);
 
-        return $this->update(['name' => $value]);
+        $this->name = $value;
     }
 }
 ```
