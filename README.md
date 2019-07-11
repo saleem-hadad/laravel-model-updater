@@ -1,4 +1,4 @@
-![image](https://pbs.twimg.com/media/D-m5M6OW4AAA0tb.jpg:large)
+![image](https://myseniorio.s3-ap-southeast-1.amazonaws.com/Artboard.jpg)
 
 <p align="center">
 <a href="https://packagist.org/packages/binarytorch/model-updater" target="_blank"><img src="https://poser.pugx.org/binarytorch/model-updater/d/total.svg" alt="Total Downloads"></a>
