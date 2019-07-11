@@ -30,6 +30,7 @@ class MakeModelUpdater extends Command
      * The construct.
      *
      * @param Filesystem $filesystem
+     *
      * @return void
      */
     public function __construct(Filesystem $filesystem)
@@ -46,21 +47,21 @@ class MakeModelUpdater extends Command
      */
     public function handle()
     {
-        $modelName = $this->argument('model') . 'Updater';
+        $modelName = $this->argument('model').'Updater';
         $updatersDir = app_path('Updaters');
-        $updaterPath = app_path('Updaters/') . $modelName . '.php';
-        
-        if (! $this->filesystem->isDirectory($updatersDir)) {
+        $updaterPath = app_path('Updaters/').$modelName.'.php';
+
+        if (!$this->filesystem->isDirectory($updatersDir)) {
             $this->filesystem->makeDirectory($updatersDir, 0755, true);
         }
 
-        if (! $this->filesystem->exists($updaterPath)) {
+        if (!$this->filesystem->exists($updaterPath)) {
             $content = $this->getClassContentFromStub($modelName);
 
             $this->filesystem->put($updaterPath, $content);
 
             $this->info('Model updater generated');
-        }else {
+        } else {
             $this->error('File Already Exists!');
         }
     }
@@ -78,8 +79,9 @@ class MakeModelUpdater extends Command
     }
 
     /**
-     * @return string
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     *
+     * @return string
      */
     protected function getStubContent()
     {
