@@ -2,8 +2,8 @@
 
 namespace BinaryTorch\ModelUpdater;
 
-use Illuminate\Support\ServiceProvider;
 use BinaryTorch\ModelUpdater\Commands\MakeModelUpdater;
+use Illuminate\Support\ServiceProvider;
 
 class ModelUpdaterServiceProvider extends ServiceProvider
 {

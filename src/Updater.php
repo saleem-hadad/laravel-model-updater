@@ -2,8 +2,8 @@
 
 namespace BinaryTorch\ModelUpdater;
 
-use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 
 abstract class Updater
 {
@@ -18,14 +18,14 @@ abstract class Updater
      * @var \Illuminate\Database\Eloquent\Model
      */
     protected $model;
-    
+
     /**
      * Registered fields to operate upon.
      *
      * @var array
      */
     protected $fields = [];
-    
+
     /**
      * @param Request $request
      */
@@ -33,13 +33,14 @@ abstract class Updater
     {
         $this->request = $request;
     }
-    
+
     /**
-     * @param  Model $model
+     * @param Model $model
+     *
      * @return Model
      */
     public function process(Model $model)
-    {   
+    {
         $this->model = $model;
 
         foreach ($this->getIntendedUpdateFields() as $field => $value) {
@@ -52,7 +53,7 @@ abstract class Updater
 
         return $this;
     }
-    
+
     /**
      * Fetch all relevant filters from the request.
      *
