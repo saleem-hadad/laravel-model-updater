@@ -7,7 +7,8 @@ use BinaryTorch\ModelUpdater\Updater;
 trait Updatable
 {
     /**
-     * @param  Updater $updater
+     * @param Updater $updater
+     *
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function fillUpdates(Updater $updater)
