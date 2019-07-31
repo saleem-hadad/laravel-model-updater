@@ -97,7 +97,7 @@ class UserUpdater extends Updater
 
 1. Install the package via composer:
 
-> This package supports Laravel 5.5+ only.
+> This package supports Laravel 5.5+ only
 
 ```bash
 composer require binarytorch/model-updater
