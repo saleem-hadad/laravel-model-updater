@@ -1,11 +1,5 @@
 ![image](https://myseniorio.s3-ap-southeast-1.amazonaws.com/Artboard.jpg)
 
-<p align="center">
-<a href="https://packagist.org/packages/laimoon/model-updater" target="_blank"><img src="https://poser.pugx.org/laimoon/model-updater/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laimoon/model-updater" target="_blank"><img src="https://poser.pugx.org/laimoon/model-updater/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laimoon/model-updater" target="_blank"><img src="https://poser.pugx.org/laimoon/model-updater/license.svg" alt="License"></a>
-</p>
-
 # Laravel Model Updater
 
 - [Overview](#overview)
