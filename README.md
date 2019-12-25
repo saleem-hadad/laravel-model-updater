@@ -1,7 +1,7 @@
 ![image](https://myseniorio.s3-ap-southeast-1.amazonaws.com/Artboard.jpg)
 
 <p align="center">
-<a href="https://packagist.org/packages/binarytorch/model-updater" target="_blank"><img src="https://poser.pugx.org/binarytorch/model-updater/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laimoon/model-updater" target="_blank"><img src="https://poser.pugx.org/binarytorch/model-updater/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/binarytorch/model-updater" target="_blank"><img src="https://poser.pugx.org/binarytorch/model-updater/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/binarytorch/model-updater" target="_blank"><img src="https://poser.pugx.org/binarytorch/model-updater/license.svg" alt="License"></a>
 </p>
@@ -100,7 +100,7 @@ class UserUpdater extends Updater
 > This package supports Laravel 5.5+ only
 
 ```bash
-composer require binarytorch/model-updater
+composer require laimoon/model-updater
 ```
 
 2. Add `Updatable` trait to your desired model:
@@ -108,7 +108,7 @@ composer require binarytorch/model-updater
 ```php
 class User extends Authenticatable
 {
-    use BinaryTorch\UpdatableModel\Traits\Updateable;
+    use Laimoon\UpdatableModel\Traits\Updateable;
 }
 ```
 
