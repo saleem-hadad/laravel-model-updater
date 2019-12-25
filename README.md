@@ -124,6 +124,8 @@ class UserController extends Controller
     public function store(UserUpdater $updates)
     {
         auth()->user()->fillUpdates($updates);
+        
+        return response()->json();
     }
 }
 ```
