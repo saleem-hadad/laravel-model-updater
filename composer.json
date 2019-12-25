@@ -1,18 +1,18 @@
 {
-    "name": "binarytorch/model-updater",
+    "name": "laimoon/model-updater",
     "description": "Laravel Model Updater",
     "keywords": [
-        "binarytorch",
+        "laimoon",
         "laravel-model-updater",
         "laravel"
     ],
-    "homepage": "https://github.com/binarytorch/laravel-model-updater",
+    "homepage": "https://github.com/laimoon/laravel-model-updater",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "Saleem Hadad",
-            "email": "saleem@binarytorch.com.my",
+            "email": "saleem@laimoon.com",
             "role": "Developer"
         }
     ],
@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BinaryTorch\\ModelUpdater\\": "src"
+            "Laimoon\\ModelUpdater\\": "src"
         }
     },
     "config": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BinaryTorch\\ModelUpdater\\ModelUpdaterServiceProvider"
+                "Laimoon\\ModelUpdater\\ModelUpdaterServiceProvider"
             ]
         }
     }

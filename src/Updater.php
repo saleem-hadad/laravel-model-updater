@@ -1,9 +1,9 @@
 <?php
 
-namespace BinaryTorch\ModelUpdater;
+namespace Laimoon\ModelUpdater;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 
 abstract class Updater
 {

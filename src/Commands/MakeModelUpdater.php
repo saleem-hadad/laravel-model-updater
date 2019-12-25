@@ -1,6 +1,6 @@
 <?php
 
-namespace BinaryTorch\ModelUpdater\Commands;
+namespace Laimoon\ModelUpdater\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -85,6 +85,6 @@ class MakeModelUpdater extends Command
      */
     protected function getStubContent()
     {
-        return $this->filesystem->get(base_path('/vendor/binarytorch/model-updater/stubs/ModelUpdater.stub'));
+        return $this->filesystem->get(base_path('/vendor/laimoon/model-updater/stubs/ModelUpdater.stub'));
     }
 }

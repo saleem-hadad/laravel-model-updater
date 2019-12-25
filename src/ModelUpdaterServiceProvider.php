@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryTorch\ModelUpdater;
+namespace Laimoon\ModelUpdater;
 
-use BinaryTorch\ModelUpdater\Commands\MakeModelUpdater;
+use Laimoon\ModelUpdater\Commands\MakeModelUpdater;
 use Illuminate\Support\ServiceProvider;
 
 class ModelUpdaterServiceProvider extends ServiceProvider

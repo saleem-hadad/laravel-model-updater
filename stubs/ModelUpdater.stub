@@ -2,7 +2,7 @@
 
 namespace App\Updaters;
 
-use BinaryTorch\ModelUpdater\Updater;
+use Laimoon\ModelUpdater\Updater;
 
 class {{CLASSNAME}} extends Updater
 {

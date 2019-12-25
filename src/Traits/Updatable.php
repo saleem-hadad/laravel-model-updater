@@ -1,8 +1,8 @@
 <?php
 
-namespace BinaryTorch\ModelUpdater\Traits;
+namespace Laimoon\ModelUpdater\Traits;
 
-use BinaryTorch\ModelUpdater\Updater;
+use Laimoon\ModelUpdater\Updater;
 
 trait Updatable
 {
