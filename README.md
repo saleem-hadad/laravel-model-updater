@@ -76,13 +76,20 @@ class UserUpdater extends Updater
     /**
      * Allowed fields to be updated.
      */
-    protected $fields = ['name'];
+    protected $fields = ['name', 'email'];
 
     protected function name($value)
     {
         $this->request->validate(['name' => 'required|string|min:6']);
 
         $this->model->name = $value;
+    }
+    
+    protected function email($value)
+    {
+        $this->request->validate(['email' => 'required|string|min:6']);
+
+        $this->model->email = $value;
     }
 }
 ```
