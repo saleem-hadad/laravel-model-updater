@@ -107,9 +107,11 @@ composer require laimoon/model-updater
 2. Add `Updatable` trait to your desired model:
 
 ```php
+use Laimoon\UpdatableModel\Traits\Updateable;
+
 class User extends Authenticatable
 {
-    use Laimoon\UpdatableModel\Traits\Updateable;
+    use Updateable;
 }
 ```
 
