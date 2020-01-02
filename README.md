@@ -1,4 +1,4 @@
-![image](https://myseniorio.s3-ap-southeast-1.amazonaws.com/Artboard.jpg)
+![image](https://s3.amazonaws.com/assets.laimoon.com/docs/laimoon-open-source.png)
 
 # Laravel Model Updater
 
