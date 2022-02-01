@@ -1,5 +1,3 @@
-![image](https://s3.amazonaws.com/assets.laimoon.com/docs/laimoon-open-source.png)
-
 # Laravel Model Updater
 
 - [Overview](#overview)
