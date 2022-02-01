@@ -141,10 +141,6 @@ class UserController extends Controller
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-### Security
-
-If you discover any security related issues, please email saleem@laimoon.com instead of using the issue tracker.
-
 ## Credits
 
 - [Saleem Hadad](https://github.com/saleem-hadad)
